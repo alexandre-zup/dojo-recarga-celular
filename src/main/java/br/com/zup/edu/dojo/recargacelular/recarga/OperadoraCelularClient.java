@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(value = "operadora-recarga-client", url = "http://url.detodasoperadoras.com")
-public interface OperadoraCelularClient {
+public interface  OperadoraCelularClient {
 
     @PostMapping("/recarga")
     String solicitaRecarga(@RequestBody RecargaRequest request);
